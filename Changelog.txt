@@ -1,2 +1,4 @@
-1. Fixed an issue with requirements which would exclude most versions of 3.9
-2. Assorted bugfixes
+1. Expanded compatibility from Python 3.9.0 to 3.12.x
+2. Fixed importing issues with the exampleScript.py and tests.py
+3. Added property storageDensity to model.KlaudaSandler2003, which describes the amount
+   of guest gas stored per cubic meter of hydrate (in kg/m^3)

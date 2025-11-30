@@ -36,6 +36,7 @@ library:
     eqPhases = [result.eqPhase for result in simResults]
     hydrationNumbers = [result.hydrationNumber for result in simResults]
     hydrateDensities = [result.hydrateDensity for result in simResults]
+    storageDensity = [result.storageDensity for result in simResults]
     freezingPoints = [result.freezingPoint for result in simResults]
 
     #Fugacity (in Pa) of gases at equilibrium
@@ -67,4 +68,6 @@ library:
     print("Hydration Numbers: " + str([round(num, 2) for num in hydrationNumbers]))
     print("Hydrate Densities (kg/m^3): " + str([round(num[0], 2) 
     for num in hydrateDensities]))
+    print("Guest Storage Capacities (kg/m^3): " + str([round(num, 2) 
+    for num in storageDensity]))
     print("Freezing Points (K): " + str([round(num, 2) for num in freezingPoints]))

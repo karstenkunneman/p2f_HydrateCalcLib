@@ -426,7 +426,8 @@ class KlaudaSandler2003:
             self.eqPhase = "L-H-V"
             
         self.hydrationNumber = core.hydrationNumber(self.eqStructure, self.eqFrac)
-        self.hydrateDensity = core.hydrateDensity(self.eqStructure, self.eqFrac, self.componentData, self.moleFractions, self.temperature, self.pressure)
+        self.hydrateDensity = core.hydrateDensity(self.eqStructure, self.eqFrac, self.componentData, self.moleFractions, self.temperature, self.pressure)[0]
+        self.storageDensity = core.hydrateDensity(self.eqStructure, self.eqFrac, self.componentData, self.moleFractions, self.temperature, self.pressure)[1]
         self.freezingPoint = freezingPoint
 
         return 0
