@@ -21,14 +21,17 @@ The IDs for guest components are as follows:
 The index ordering for salts is as follows:
 
     * 0 - NaCl
-    * 1 - CaCl2
-    * 2 - MgCl2
-    * 3 - CaBr2
-    * 4 - NaBr
-    * 5 - KBr
-    * 6 - NH4Cl
-    * 7 - KHCOO
-    * 8 - NaHCOO
+    * 1 - KCl
+    * 2 - CaCl2
+    * 3 - MgCl2
+    * 4 - CaBr2
+    * 5 - NaBr
+    * 6 - KBr
+    * 7 - NH4Cl
+    * 8 - KHCOO
+    * 9 - NaHCOO
+    * 10 - ZnBr2
+    * 11 - ZnCl2
 
 The index ordering for organic inhibitors is as follows:
 

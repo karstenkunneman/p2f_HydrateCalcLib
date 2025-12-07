@@ -80,6 +80,16 @@ Inputs:
 To obtain an estimation of the density of a hydrate system and the "density" of the gases stored
 inside (in kg/m^3), this function is employed using the same conventions as previously mentioned.
 
+zincEffWeight
+*************
+Inputs:
+    *   salt
+    *   weightFrac
+  
+Returns the effective weight fraction of zinc salts in solution. salt requires a string input of
+either "ZnBr" or "ZnCl", and weightFrac is the actual weight fraction of zinc salt in solution
+(as a float).
+
 HuLeeSum
 ********
 Inputs:

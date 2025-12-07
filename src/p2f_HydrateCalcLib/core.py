@@ -156,6 +156,14 @@ def hydrateDensity(structure, occupancies, compoundData, moleFractions, T, P):
             
     return waterMass + guestMass, guestMass
 
+def zincEffWeight(salt, weightFrac):
+    if salt == "ZnBr2":
+        weightFrac = -5.5266E-04*weightFrac**3 + 3.7216E-02*weightFrac**2 + 2.6080E-01*weightFrac
+    elif salt == "ZnCl2":
+        weightFrac = -7.9293E-05*weightFrac**3 + 8.1614E-03*weightFrac**2 + 5.6761E-01*weightFrac
+
+    return weightFrac
+
 #Hu-Lee-Sum Inhibition Model
 #Yue Hu et al. (2018)
 def HuLeeSum(T, saltConcs, inhibitorConcs, betaGas, freezingPoint=273.15):
@@ -167,6 +175,12 @@ def HuLeeSum(T, saltConcs, inhibitorConcs, betaGas, freezingPoint=273.15):
             anMols = np.zeros(noSalts)
             catMolFracs = np.zeros(noSalts)
             anMolFracs = np.zeros(noSalts)
+
+            #ZnBr2 Effective Weight Fraction
+            saltConcs[10] = zincEffWeight("ZnBr2", saltConcs[11])
+
+            #ZnCl2 Effective Weight Fraction
+            saltConcs[11] = zincEffWeight("ZnCl2", saltConcs[11])
 
             #Calculate mole fractions for the anions and cations in solution
             for i in range(noSalts):

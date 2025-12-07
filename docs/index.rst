@@ -1,5 +1,5 @@
 p2f_HydrateCalcLib: a Library for the Prediction of Gas Hydrate Equilibrium and Inhibition
-====================================================================================
+============================================================================================
 
 .. toctree::
    :maxdepth: 3

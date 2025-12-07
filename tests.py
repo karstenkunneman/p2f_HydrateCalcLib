@@ -1,4 +1,5 @@
 from src.p2f_HydrateCalcLib import model
+from src.p2f_HydrateCalcLib import core
 
 #1-Component T-Defined Fresh Water
 assert round(model.KlaudaSandler2003([1], [1], "T", 280, None).pressure/1E5, 1) == 51.5 #bar
@@ -11,3 +12,7 @@ assert round(model.KlaudaSandler2003([3], [1], "P", None, 2E5).temperature, 1) =
 
 #3-Component P-Defined Fresh Water
 assert round(model.KlaudaSandler2003([1,2,3], [0.9196,0.0513,0.0291], "P", None, 10.7E5).temperature, 1) == 275.8 #K
+
+#Zinc Effective Weight Percents
+assert round(core.zincEffWeight("ZnBr2", 10), 2) == 5.78
+assert round(core.zincEffWeight("ZnCl2", 10), 2) == 6.41
