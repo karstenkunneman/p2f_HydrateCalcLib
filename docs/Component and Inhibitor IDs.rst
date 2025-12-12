@@ -37,7 +37,7 @@ The index ordering for organic inhibitors is as follows:
 
     * 0 - Methanol
     * 1 - Ethanol
-    * 2 - Glycol
+    * 2 - Glycerol
     * 3 - Monoethylene Glycol
     * 4 - Diethylene Glycol
     * 5 - Triethylene Glycol

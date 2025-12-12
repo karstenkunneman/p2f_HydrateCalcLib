@@ -1,3 +1,1 @@
-1. Added ZnBr2 and ZnCl2 to salt list with effective weight fraction correction terms (calculated with core.zincEffWeight)
-   from Sum et al. 2025
-2. Removed some unnecessary data from Salt Data.csv
+1. Changed "Glycol" to "Glycerol"

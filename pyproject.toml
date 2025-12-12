@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "p2f_HydrateCalcLib"
-version = "0.1.0.8"
+version = "0.1.0.9"
 authors = [
   {name="Karsten Kunneman", email="karstenkunneman@protonmail.com"},
   {name="Amadeu K. Sum", email="asum@mines.edu"},
